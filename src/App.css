@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.search-container {
+  height: 10vh;
+  width: 100vw;
+  background-color: #3367d6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-input-search-container {
+  display: flex;
+}
+.image1 {
+  height: 6vh;
+  width: 8vw;
+  align-self: center;
+  justify-content: flex-start;
+}
+
+.image2 {
+  height: 20px;
+  width: 30px;
+}
+
+.icon-container {
+  height: 6vh;
+  width: 6vw;
+  background-color: #2850a7;
+  border: 1px solid #2850a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  height: 6vh;
+  width: 20vw;
+  background-color: #2850a7;
+  border: 1px solid #2850a7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.input {
+  background-color: transparent;
+  border: transparent;
+  font-size: 14px;
+  outline: none;
+  color: #ffffff;
+  font-family: 'Roboto';
+  width: 17vw;
+  cursor: pointer;
+}
+
+.second-main-container {
+  margin: 10px;
+  height: 85vh;
+  width: 80vw;
+  background-color: #f8fafc;
+  box-shadow: 10px 10px 5px lightblue;
+  overflow-y: auto;
+}
+
+.no-history {
+  display: flex;
+  height: 100vh;
+  font-style: 'Roboto';
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media Screen and (max-width: 576px) {
+  .search-container {
+    height: 5vh;
+  }
+  .image1 {
+    height: 20px;
+    width: 45px;
+  }
+  .input-container {
+    height: 3vh;
+    width: 30vw;
+  }
+
+  .icon-container {
+    height: 3vh;
+  }
+  .input {
+    font-size: 10px;
+  }
+  .second-main-container {
+    width: 100vw;
+    height: 100vh;
+  }
+  .no-history {
+    font-size: 20px;
+  }
+}
